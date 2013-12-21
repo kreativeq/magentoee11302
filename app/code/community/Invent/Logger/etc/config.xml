@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Invent_Logger>
+            <version>1.0.0.0</version>
+        </Invent_Logger>
+    </modules>
+    <global>
+    <models>
+        <invent_logger>
+            <class>Invent_Logger_Model</class>
+            <resourceModel>
+                invent_logger_resource
+            </resourceModel>
+        </invent_logger>
+        <invent_logger_resource>
+            <class>Invent_Logger_Model_Resource</class>
+            <entities>
+                <logger>
+                    <table>invent_logger_logger</table>
+                </logger>
+            </entities>
+        </invent_logger_resource>
+    </models>
+    <resources>
+        <invent_logger_setup>
+        <setup>
+            <module>Invent_Logger</module>
+        </setup>
+        </invent_logger_setup>
+    </resources>
+    <helpers>
+        <invent_logger>
+            <class>Invent_Logger_Helper</class>
+        </invent_logger>
+    </helpers>
+    </global>
+</config>
